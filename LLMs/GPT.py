@@ -8,8 +8,8 @@ from tenacity import (
     wait_random_exponential,
 )  # for exponential backoff
 import pandas as pd
-api_key = "sk-ySdVtr8lBSE43UKN3cC5041b6133414dBfAd2e10A2Ee1748"
-client = OpenAI(base_url='https://api.chatgptid.net/v1', api_key=api_key)
+api_key = ""
+client = OpenAI(base_url='', api_key=api_key)
 @retry(wait=wait_random_exponential(min=1, max=2), stop=stop_after_attempt(6))
 def askChatGPT(prompt):
     if len(prompt)<1450:
@@ -42,3 +42,4 @@ with open('out.txt', 'a', encoding='utf-8') as file:
     # 按行将内容写入目标 txt 文件
     for line in prompts:
         file.write(askChatGPT(line)+"\n")
+
