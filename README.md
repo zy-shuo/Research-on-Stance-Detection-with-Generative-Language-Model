@@ -41,9 +41,6 @@ Research-on-Stance-Detection-with-Generative-Language-Model/
 ├── data/                     # 数据集
 │   ├── v1/                   # 数据集v1
 │   ├── v2/                   # 数据集v2（推荐）
-│   │   ├── train.json        # 训练集
-│   │   ├── test.json         # 测试集
-│   │   └── all_data.json     # 完整数据
 │   └── README.md             # 数据集说明
 │
 ├── requirements.txt          # 依赖列表
