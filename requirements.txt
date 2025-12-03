@@ -1,0 +1,26 @@
+# 基础依赖
+torch>=2.0.0
+transformers>=4.30.0
+numpy>=1.24.0
+
+# 数据处理
+pandas>=1.5.0
+openpyxl>=3.0.0  # Excel文件支持
+
+# 机器学习
+scikit-learn>=1.2.0
+
+# API调用（LLMs模块）
+openai>=1.0.0
+tenacity>=8.0.0
+
+# 进度显示
+tqdm>=4.65.0
+
+# 日志和可视化（可选）
+tensorboard>=2.13.0
+
+# 开发工具（可选）
+jupyter>=1.0.0
+ipython>=8.0.0
+
